@@ -1,17 +1,126 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
+    <title>A Purr-fect Storm...and Cat</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <title> A Purr-fect Storm...and Cat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+           
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #3d3f41;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: ivory;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Left and right column */
+        .column.left {
+            width: 20%;
+        
+            display: inline;
+        }
+
+          .column.right {
+            width: 20%;
+            display: inline;
+            position: ;
+        }
+        /* Middle column */
+        .column.middle {
+            width: 60%;
+display: inline;
+            text-align: center;
+        }
+
+        img {
+           max-width: 100%;
+        max-height: 100%;
+    position: relative;
+        display: inline-block;
+        }
+
+
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #3d3f41;
+            padding: 1%;
+            text-align: center;
+            color: ivory;
+        }
+
+        .footer2 {
+            background-color: #3d3f41;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+
+            .column.middle, .column.left, column.right {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<p>Hi there</p>
 
+    <div class="header">
+        <h2>Header</h2>
+        <p>Reg words</p>
+    </div>
 
+    <div class="row">
+        <div class="column left" style="background-color:#aaa;">Column left</div>
+        <div class="column middle" style="background-color:#bbb;">Check Me-owt
+<img id="stormsit" src="images/storm_cutout2.png" alt="Cat Sitting">
+        </div>
+       
+        <div class="column right" style="background-color:#ccc;">Column right</div>
+    </div>
 
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+<div class="footer2">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>
 </body>
 
 </html>
