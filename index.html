@@ -13,6 +13,24 @@
            
         }
 
+        img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -147,23 +165,23 @@ display: inline;
 
     <div class="row">
         <div class="column left" style="background-color:rgb(11, 168, 168)"; >
-            <img id="controller" src="images/gamepad.png" alt="Game controller">
+            <img id="controller" src="images/gamepad.png" alt="Game controller"onclick="document.location = 'gaming.html'">
             <br>
-            <img id="friends" src="images/friends.png" alt="friends">
+            <img id="friends" src="images/friends.png" alt="friends" onclick="document.location = 'friends.html'">
 
 
         </div>
         <div class="column middle" style="background-color:rgb(11, 168, 168)";>
-<img id="stormsit" src="images/storm_cutout2.png" alt="Cat Sitting">
+<img id="stormsit" src="images/storm_cutout2.png" alt="Cat Sitting"onclick="document.location = 'index.html'">
 
 <br>
 <br>
         </div>
        
         <div class="column right" style="background-color:rgb(11, 168, 168)";>
-            <img id="relax" src="images/relaxing.png" alt="relaxing">
+            <img id="relax" src="images/relaxing.png" alt="relaxing" onclick="document.location = 'relax.html'">
             <br>
-            <img id="shirt" src="images/t-shirt.png" alt="shirt">
+            <img id="shirt" src="images/t-shirt.png" alt="shirt"onclick="document.location = 'laundry.html'">
         </div>
     </div>
 
