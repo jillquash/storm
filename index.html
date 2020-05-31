@@ -23,7 +23,7 @@
             padding: 20px;
             text-align: center;
             font-size: 35px;
-            color: ivory;
+            color: rgb(11, 168, 168);
         }
 
         /* Create three unequal columns that floats next to each other */
@@ -37,24 +37,26 @@
         /* Left and right column */
         .column.left {
             width: 20%;
-        
+
             display: inline;
         }
 
           .column.right {
             width: 20%;
             display: inline;
-            position: ;
+        
         }
         /* Middle column */
         .column.middle {
             width: 60%;
 display: inline;
             text-align: center;
+            
         }
 
         p {
             position:relative
+            color:rgb(11, 168, 168)
         }
 
         img {
@@ -64,7 +66,26 @@ display: inline;
         display: inline-block;
         }
 
+        #relax {
+           
+            max-width: 40%;
+        }
 
+        #controller  {
+           
+            max-width: 40%;
+        }
+
+
+        #friends  {
+           
+            max-width: 40%;
+        }
+
+        #shirt  {
+         
+            max-width: 40%;
+        }
 
         /* Clear floats after the columns */
         .row:after {
@@ -78,7 +99,9 @@ display: inline;
             background-color: #3d3f41;
             padding: 1%;
             text-align: center;
-            color: ivory;
+            color: rgb(11, 168, 168);
+            font-size: 20px;
+            clear: both;
         }
 
         .footer2 {
@@ -104,24 +127,38 @@ display: inline;
 <body>
 
     <div class="header">
-        <h2>Header</h2>
-        <p>Reg words</p>
+        <h2>Welcome</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+
     </div>
 
     <div class="row">
-        <div class="column left" style="background-color:#aaa;">Column left</div>
-        <div class="column middle" style="background-color:#bbb;">
+        <div class="column left" style="background-color:rgb(11, 168, 168)"; >
+            <img id="controller" src="images/gamepad.png" alt="Game controller">
+            <p>test</p>
+            <img id="friends" src="images/friends.png" alt="friends">
+
+
+        </div>
+        <div class="column middle" style="background-color:rgb(11, 168, 168)";>
 <img id="stormsit" src="images/storm_cutout2.png" alt="Cat Sitting">
-<p>Check Me-owt</p>
+
 <br>
 <br>
         </div>
        
-        <div class="column right" style="background-color:#ccc;">Column right</div>
+        <div class="column right" style="background-color:rgb(11, 168, 168)";>
+            <img id="relax" src="images/relaxing.png" alt="relaxing">
+            <p style= color:"rgb(11, 168, 168)">test</p>
+            <img id="shirt" src="images/t-shirt.png" alt="shirt">
+        </div>
     </div>
 
     <div class="footer">
-        <p>Footer</p>
+        <p>Check Me-owt</p>
     </div>
 <div class="footer2">
     <br>
